@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.funny.appgetposition.Main">
+
+    <TextView
+        android:id="@+id/twhereAmI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iAm" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="212dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintTop_toBottomOf="@+id/bAsk"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/bAsk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/qAsk"
+        app:layout_constraintTop_toBottomOf="@+id/chInet"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <CheckBox
+        android:id="@+id/chGPRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="GPRS"
+        app:layout_constraintTop_toBottomOf="@+id/twhereAmI"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <CheckBox
+        android:id="@+id/chInet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Internet"
+        app:layout_constraintTop_toBottomOf="@+id/chGPRS"
+        tools:layout_editor_absoluteX="0dp" />
+</android.support.constraint.ConstraintLayout>

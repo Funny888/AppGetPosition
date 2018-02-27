@@ -1,0 +1,5 @@
+<resources>
+    <string name="iAm"> Где я? </string>
+    <string name="qAsk"> Узнать </string>
+    <string name="app_name">AppGetPosition</string>
+</resources>
