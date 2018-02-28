@@ -6,46 +6,54 @@
     android:layout_height="match_parent"
     tools:context="com.example.funny.appgetposition.Main">
 
-    <TextView
-        android:id="@+id/twhereAmI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/iAm" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="114dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="212dp"
-        android:ems="10"
-        android:inputType="time"
-        app:layout_constraintTop_toBottomOf="@+id/bAsk"
-        tools:layout_editor_absoluteX="16dp" />
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/bAsk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/qAsk"
-        app:layout_constraintTop_toBottomOf="@+id/chInet"
-        tools:layout_editor_absoluteX="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <CheckBox
-        android:id="@+id/chGPRS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="GPRS"
-        app:layout_constraintTop_toBottomOf="@+id/twhereAmI"
-        tools:layout_editor_absoluteX="0dp" />
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <CheckBox
-        android:id="@+id/chInet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Internet"
-        app:layout_constraintTop_toBottomOf="@+id/chGPRS"
-        tools:layout_editor_absoluteX="0dp" />
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 </android.support.constraint.ConstraintLayout>
