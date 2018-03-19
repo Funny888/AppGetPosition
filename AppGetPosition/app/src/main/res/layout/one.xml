@@ -13,25 +13,27 @@
         android:text="@string/iAm" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="114dp"
-        android:layout_height="34dp"
+        android:id="@+id/eTime"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
         android:layout_marginTop="212dp"
+        android:contextClickable="false"
+        android:focusable="false"
         android:ems="10"
         android:inputType="time"
         app:layout_constraintTop_toBottomOf="@+id/bAsk"
-        tools:layout_editor_absoluteX="16dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:id="@+id/bAsk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="8dp"
         android:text="@string/qAsk"
-        app:layout_constraintTop_toBottomOf="@+id/chInet"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/chGPS"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
     <CheckBox
         android:id="@+id/chGPS"
@@ -40,16 +42,6 @@
         android:layout_marginTop="48dp"
         android:text="GPRS"
         app:layout_constraintTop_toBottomOf="@+id/twhereAmI"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
-
-    <CheckBox
-        android:id="@+id/chInet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Internet"
-        app:layout_constraintTop_toBottomOf="@+id/chGPS"
         tools:layout_editor_absoluteX="0dp"
         tools:ignore="MissingConstraints" />
 

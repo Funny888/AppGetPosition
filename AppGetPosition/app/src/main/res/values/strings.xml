@@ -1,4 +1,6 @@
 <resources>
+    <integer name="item0">0</integer>
+    <integer name="item1">1</integer>
     <string name="iAm"> Где я? </string>
     <string name="qAsk"> Узнать </string>
     <string name="tab1"> Координаты </string>
